@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3D7DDD326FC669E006EDBD4 /* WaterMelonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDD226FC669E006EDBD4 /* WaterMelonApp.swift */; };
+		D3D7DDD526FC669E006EDBD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDD426FC669E006EDBD4 /* ContentView.swift */; };
+		D3D7DDD726FC669F006EDBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D7DDD626FC669F006EDBD4 /* Assets.xcassets */; };
+		D3D7DDDA26FC669F006EDBD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D7DDD926FC669F006EDBD4 /* Preview Assets.xcassets */; };
+		D3D7DDE226FC6C2A006EDBD4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDE126FC6C2A006EDBD4 /* GameScene.swift */; };
+		D3D7DDE926FC6E13006EDBD4 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D7DDE626FC6E13006EDBD4 /* win.mp3 */; };
+		D3D7DDEA26FC6E13006EDBD4 /* falldown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D7DDE726FC6E13006EDBD4 /* falldown.mp3 */; };
+		D3D7DDEB26FC6E13006EDBD4 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D7DDE826FC6E13006EDBD4 /* bomb.mp3 */; };
+		D3D7DDED26FD694B006EDBD4 /* FruitUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDEC26FD694B006EDBD4 /* FruitUtil.swift */; };
+		D3D7DDEF26FD71E0006EDBD4 /* GameScene+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDEE26FD71E0006EDBD4 /* GameScene+UI.swift */; };
+		D3D7DDF126FD720C006EDBD4 /* GameScene+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDF026FD720C006EDBD4 /* GameScene+Touches.swift */; };
+		D3D7DDF426FD75DD006EDBD4 /* FriutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DDF326FD75DD006EDBD4 /* FriutData.swift */; };
+		D3D7DF122702F929006EDBD4 /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7DF112702F929006EDBD4 /* GameScene+Collisions.swift */; };
+		D3D7E0242704622D006EDBD4 /* SoundUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7E0232704622D006EDBD4 /* SoundUtil.swift */; };
+		D3D7E02627056832006EDBD4 /* GameScene+Realine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7E02527056832006EDBD4 /* GameScene+Realine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3D7DDCF26FC669E006EDBD4 /* WaterMelon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMelon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D7DDD226FC669E006EDBD4 /* WaterMelonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMelonApp.swift; sourceTree = "<group>"; };
+		D3D7DDD426FC669E006EDBD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3D7DDD626FC669F006EDBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3D7DDD926FC669F006EDBD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3D7DDDB26FC669F006EDBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D7DDE126FC6C2A006EDBD4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D3D7DDE626FC6E13006EDBD4 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		D3D7DDE726FC6E13006EDBD4 /* falldown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = falldown.mp3; sourceTree = "<group>"; };
+		D3D7DDE826FC6E13006EDBD4 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		D3D7DDEC26FD694B006EDBD4 /* FruitUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitUtil.swift; sourceTree = "<group>"; };
+		D3D7DDEE26FD71E0006EDBD4 /* GameScene+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+UI.swift"; sourceTree = "<group>"; };
+		D3D7DDF026FD720C006EDBD4 /* GameScene+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Touches.swift"; sourceTree = "<group>"; };
+		D3D7DDF326FD75DD006EDBD4 /* FriutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriutData.swift; sourceTree = "<group>"; };
+		D3D7DF112702F929006EDBD4 /* GameScene+Collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Collisions.swift"; sourceTree = "<group>"; };
+		D3D7E0232704622D006EDBD4 /* SoundUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundUtil.swift; sourceTree = "<group>"; };
+		D3D7E02527056832006EDBD4 /* GameScene+Realine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Realine.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3D7DDCC26FC669E006EDBD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3D7DDC626FC669E006EDBD4 = {
+			isa = PBXGroup;
+			children = (
+				D3D7DDD126FC669E006EDBD4 /* WaterMelon */,
+				D3D7DDD026FC669E006EDBD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3D7DDD026FC669E006EDBD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7DDCF26FC669E006EDBD4 /* WaterMelon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3D7DDD126FC669E006EDBD4 /* WaterMelon */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7DF102702F6D0006EDBD4 /* Fruit */,
+				D3D7DDE526FC6E13006EDBD4 /* Sounds */,
+				D3D7DDD226FC669E006EDBD4 /* WaterMelonApp.swift */,
+				D3D7DDD426FC669E006EDBD4 /* ContentView.swift */,
+				D3D7DDF226FD730E006EDBD4 /* GameScene */,
+				D3D7DDD626FC669F006EDBD4 /* Assets.xcassets */,
+				D3D7DDDB26FC669F006EDBD4 /* Info.plist */,
+				D3D7DDD826FC669F006EDBD4 /* Preview Content */,
+			);
+			path = WaterMelon;
+			sourceTree = "<group>";
+		};
+		D3D7DDD826FC669F006EDBD4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7DDD926FC669F006EDBD4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3D7DDE526FC6E13006EDBD4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7DDE626FC6E13006EDBD4 /* win.mp3 */,
+				D3D7DDE726FC6E13006EDBD4 /* falldown.mp3 */,
+				D3D7DDE826FC6E13006EDBD4 /* bomb.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D3D7DDF226FD730E006EDBD4 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7DDE126FC6C2A006EDBD4 /* GameScene.swift */,
+				D3D7DDEE26FD71E0006EDBD4 /* GameScene+UI.swift */,
+				D3D7DDF026FD720C006EDBD4 /* GameScene+Touches.swift */,
+				D3D7DF112702F929006EDBD4 /* GameScene+Collisions.swift */,
+				D3D7E02527056832006EDBD4 /* GameScene+Realine.swift */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		D3D7DF102702F6D0006EDBD4 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7DDEC26FD694B006EDBD4 /* FruitUtil.swift */,
+				D3D7DDF326FD75DD006EDBD4 /* FriutData.swift */,
+				D3D7E0232704622D006EDBD4 /* SoundUtil.swift */,
+			);
+			path = Fruit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3D7DDCE26FC669E006EDBD4 /* WaterMelon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3D7DDDE26FC669F006EDBD4 /* Build configuration list for PBXNativeTarget "WaterMelon" */;
+			buildPhases = (
+				D3D7DDCB26FC669E006EDBD4 /* Sources */,
+				D3D7DDCC26FC669E006EDBD4 /* Frameworks */,
+				D3D7DDCD26FC669E006EDBD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterMelon;
+			productName = WaterMelon;
+			productReference = D3D7DDCF26FC669E006EDBD4 /* WaterMelon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3D7DDC726FC669E006EDBD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D3D7DDCE26FC669E006EDBD4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = D3D7DDCA26FC669E006EDBD4 /* Build configuration list for PBXProject "WaterMelon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3D7DDC626FC669E006EDBD4;
+			productRefGroup = D3D7DDD026FC669E006EDBD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3D7DDCE26FC669E006EDBD4 /* WaterMelon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3D7DDCD26FC669E006EDBD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D7DDDA26FC669F006EDBD4 /* Preview Assets.xcassets in Resources */,
+				D3D7DDEB26FC6E13006EDBD4 /* bomb.mp3 in Resources */,
+				D3D7DDD726FC669F006EDBD4 /* Assets.xcassets in Resources */,
+				D3D7DDE926FC6E13006EDBD4 /* win.mp3 in Resources */,
+				D3D7DDEA26FC6E13006EDBD4 /* falldown.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3D7DDCB26FC669E006EDBD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D7DDF426FD75DD006EDBD4 /* FriutData.swift in Sources */,
+				D3D7E0242704622D006EDBD4 /* SoundUtil.swift in Sources */,
+				D3D7DDF126FD720C006EDBD4 /* GameScene+Touches.swift in Sources */,
+				D3D7DDED26FD694B006EDBD4 /* FruitUtil.swift in Sources */,
+				D3D7DDE226FC6C2A006EDBD4 /* GameScene.swift in Sources */,
+				D3D7DDD526FC669E006EDBD4 /* ContentView.swift in Sources */,
+				D3D7DDEF26FD71E0006EDBD4 /* GameScene+UI.swift in Sources */,
+				D3D7DDD326FC669E006EDBD4 /* WaterMelonApp.swift in Sources */,
+				D3D7DF122702F929006EDBD4 /* GameScene+Collisions.swift in Sources */,
+				D3D7E02627056832006EDBD4 /* GameScene+Realine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3D7DDDC26FC669F006EDBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3D7DDDD26FC669F006EDBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3D7DDDF26FC669F006EDBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMelon/Preview Content\"";
+				DEVELOPMENT_TEAM = BQVUM3KAUU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterMelon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NingJian.WaterMelon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3D7DDE026FC669F006EDBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMelon/Preview Content\"";
+				DEVELOPMENT_TEAM = BQVUM3KAUU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WaterMelon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NingJian.WaterMelon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3D7DDCA26FC669E006EDBD4 /* Build configuration list for PBXProject "WaterMelon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D7DDDC26FC669F006EDBD4 /* Debug */,
+				D3D7DDDD26FC669F006EDBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3D7DDDE26FC669F006EDBD4 /* Build configuration list for PBXNativeTarget "WaterMelon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D7DDDF26FC669F006EDBD4 /* Debug */,
+				D3D7DDE026FC669F006EDBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3D7DDC726FC669E006EDBD4 /* Project object */;
+}
